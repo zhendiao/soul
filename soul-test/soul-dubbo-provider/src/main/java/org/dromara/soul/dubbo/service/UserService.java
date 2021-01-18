@@ -1,4 +1,4 @@
-package org.dromara.soul.dubbo.provider;
+package org.dromara.soul.dubbo.service;
 
 public interface UserService {
 

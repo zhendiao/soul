@@ -43,6 +43,9 @@ public final class RegisterUtils {
      */
     public static void doRegister(final String json, final String url, final RpcTypeEnum rpcTypeEnum) {
         try {
+            System.out.println(json);
+            System.out.println(url);
+            System.out.println(rpcTypeEnum.getName());
             String result = OkHttpTools.getInstance().post(url, json);
             if (AdminConstants.SUCCESS.equals(result)) {
                 log.info("{} client register success: {} ", rpcTypeEnum.getName(), json);
